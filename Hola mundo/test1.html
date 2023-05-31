@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test1</title>
+</head>
+<body>
+
+<h1>Hola mundo!</h1>
+<b id="t1" class="inicio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro quia, omnis sit asperiores repellat libero ea suscipit distinctio, repellendus amet ipsa magni. Ad quae optio quibusdam, magni culpa quia?</b>
+<br>
+
+<p id="t2" class="inicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quasi consectetur quas vel assumenda repellendus fuga ratione et veritatis temporibus enim aliquid quo omnis, quibusdam odio accusamus id minima inventore.</p>
+<img src="https://www.adecco.es/~/media/adeccogroup/brands/adecco-global-2016/spain/media/2019/1200px-Adecco_logosvg.png">
+<br>
+
+<i><a href="https://fundacionadecco.org/">Pagina oficial</a></i>
+<br>
+
+<div style="margin-top: 50px;">
+    <table style="border: 1px solid black;">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Pepe</td>
+            <td>Castilla</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Anilla</td>
+            <td>32</th>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <h2>Formulario</h2>
+<form action="/users" method="POST">
+  <label for="first-name">First name:</label><br>
+  <input type="text" id="first-name" name="first-name" placeholder="Alan"><br>
+
+  <label for="last-name">Last name *</label><br>
+  <input type="text" id="last-name" name="last-name" placeholder="Sastre"><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="alan@alansastre.co"><br>
+
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br>
+
+  <label for="web">Web:</label><br>
+  <input type="url" id="web" name="web" placeholder="www.alansastre.co"><br>
+
+  <label for="price">Price: </label><br>
+  <input id="price" type="number" step="0.01" value="0.00" ><br>
+
+  <label for="mensaje">Mensaje:</label><br>
+  <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"
+  rows="6" cols="40"></textarea><br><br>
+
+  <input type="radio" id="prueba" name="gender" value="prueba">
+  <label for="prueba">Prueba</label><br>
+
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Masculino</label><br>
+
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Femenino</label><br>
+
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Otro</label><br><br>
+
+  <input type="checkbox" id="vehicle0" name="vehicle0" value="Patinete">
+    <label for="vehicle0">Patinete</label><br>
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1">Bicicleta</label><br>
+
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2">Coche</label><br>
+
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3">Barca</label><br><br>
+
+    <textarea name="message" rows="10" cols="30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </textarea><br><br>
+
+    <label for="tienda">Seleccionar Tienda:</label><br>
+    <select id="tienda" name="tiendas" size="2" multiple>
+      <option value="1">Amazon</option>
+      <option value="2">Ebay</option>
+      <option value="3">Best Buy</option>
+      <option value="4">Mercado Libre</option>
+    </select>
+    <br><br>
+
+    <label for="cars">Seleccionar fabricante:</label><br>
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select><br><br>
+
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" value="Mondeo"><br><br>
+    
+        <label for="cars">Seleccionar fabricante:</label>
+        <select id="cars" name="cars" size="4" multiple>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <br>
+
+        <br>
+        <fieldset>
+          <legend>Elija lenguaje de programación backend</legend>
+      
+          <input type="radio" id="java" name="java">
+          <label for="java">Java</label><br/>
+      
+          <input type="radio" id="python" name="python">
+          <label for="python">Python</label><br/>
+      
+          <input type="radio" id="golang" name="golang">
+          <label for="golang">Go</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Elija framework frontend</legend>
+      
+          <input type="radio" id="angular" name="angular">
+          <label for="angular">Angular</label><br/>
+      
+          <input type="radio" id="react" name="react">
+          <label for="react">React</label><br/>
+      
+          <input type="radio" id="vuejs" name="vuejs">
+          <label for="vuejs">Vuejs</label>
+        </fieldset>
+
+
+
+        <br><input type="submit" value="Guardar">
+</form>
+</div>
+</body>
+</html> 

@@ -1,0 +1,116 @@
+.hijo{
+    height: 3rem;
+    width: 100%;
+    background-color: aqua;
+    border: 1px solid black;
+}
+/* breakpoint xs */
+@media screen and (min-width: 0px) and (max-width: 575px ) {
+    .hijo{
+        height: 10rem;
+        margin: 3rem auto;
+    width: 80%;    }
+    .contenedor nav{
+        display: none;
+    }
+    .contenedor .botones{
+        display: none;
+    }
+}
+/* breakpoint sm */
+@media screen and (min-width: 576px) and (max-width: 767px ) {
+    .hijo{
+        height: 8rem;
+        width: 70%;
+        margin: 2rem auto;
+    }
+    .contenedor nav{
+        display: none;
+    }
+    .contenedor .botones{
+        display: none;
+    }
+}
+/* breakpoint md */
+@media screen and (min-width: 768px) and (max-width: 991px ) {
+    .hijo{
+        height: 10rem;
+        width: 60%;
+        margin: 1rem auto;
+    }
+    .contenedor .botones{
+        width: 19%;
+    }
+    .contenedor-menu, .contenedor-login{
+        display: none;
+    }
+}   
+/* breakpoint lg */
+@media screen and (min-width: 992px) and (max-width: 1199px ) {
+    .nomostrar{
+        display: none;
+    }
+    .hijo{
+        height: 8rem;
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .contenedor .botones{
+        width: 17%;
+    }
+    .contenedor-menu, .contenedor-login{
+        display: none;
+    }
+}
+/* breakpoint xl */
+@media screen and (min-width: 1200px) and (max-width: 1399px ) {
+    .hijo{
+        height: 15rem;
+        width: 100%;
+        margin: 2rem;
+    }
+    .contenedor-menu, .contenedor-login{
+        display: none;
+    }
+}
+/* breakpoint xxl */
+@media screen and (min-width: 1400px) and (max-width: 2800px ) {
+    .hijo{
+        height: 15rem;
+        width: 100%;
+        margin: 2rem;
+    }
+    .contenedor-menu, .contenedor-login{
+        display: none;
+    }
+}
+
+/* HEADER */
+
+.contenedor li{
+    display: inline;
+}
+
+.contenedor a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botones{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contenedor ul{
+    margin: 0px !important;
+    padding: 0px !important;
+}
