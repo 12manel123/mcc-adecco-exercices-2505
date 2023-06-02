@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu compañía aérea - Sitio web</title>
+  <link rel="stylesheet" href="estilos.css"> <!-- Enlaza tu archivo CSS personalizado -->
+  <style>
+/* Estilo para el contenedor negro */
+.contNegro {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para el contenedor naranja */
+.contNaranja {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Estilo para la imagen del logo */
+.hijo1 img {
+  height: 50px;
+}
+
+/* Estilo para la navegación */
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilo para el botón de idioma */
+nav ul li a div {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a div img {
+  margin-left: 5px;
+}
+
+/* Estilo para el contenedor azul */
+.contAzul {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Estilo para la caja rosa */
+.cajaRosa {
+  background-color: pink;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Estilo para las cajas rojas */
+.cajaRoja1, .cajaRoja2, .cajaRoja3 {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+}
+
+/* Estilo para el botón */
+.cajaBoton {
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  margin-left: 20px;
+}
+  </style>
+</head>
+<body>
+<div class="contNegro">
+    <div class="contNaranja">
+        <div class="hijo1"><img src="img/logo.jpg"></div>
+        <div class="hijo2">
+            <nav>
+                <ul>
+                    <li><a href="planear.html">Planear</a></li>
+                    <li><a href="reservas.html">Mis reservas</a></li>
+                    <li><a href="registrarse.html">Registrarse</a></li>
+                    <li><a href="iniciar.html">Iniciar sesión</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="langauge">
+                        <div>
+                            <!--<img src="img/spain.png" alt="idioma" width="24px" height="24px">-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24px" height="auto"><path fill="#ffda44" d="M0 85.331h512v341.337H0z" class="colorffda44 svgShape"></path><path fill="#d80027" d="M0 85.331h512v113.775H0zM0 312.882h512v113.775H0z" class="colord80027 svgShape"></path></svg>
+                        </div>
+                        </div></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="contAzul">
+        <div class="cajaRosa">
+            <div class="cajaRoja1"></div>
+            <div class="cajaRoja2"></div>
+            <div class="cajaRoja3"></div>
+        </div>
+        <div class="cajaBoton"></div>
+    </div>
+</div>
+
+
+</body>
+</html>
