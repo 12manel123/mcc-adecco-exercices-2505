@@ -1,0 +1,188 @@
+.contTodo {
+    background-color: #f7f7f7;
+  }
+
+  .contNegro {
+    background-color: #232f3e;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contLogo img {
+    height: 60px;
+  }
+
+  .contDireccion a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contDireccion a span {
+    margin-right: 5px;
+    font-size: 14px;
+    tab-size: left;
+  }
+
+  .contDireccion a p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .contBuscador {
+    background-color: #232f3e;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+  }
+
+  .contBuscador .Desplegable {
+    background-color: #e7e9ec;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px 0 0 5px;
+    margin-right: 5px;
+  }
+
+  .contBuscador .Desplegable i {
+    margin-left: auto;
+  }
+
+  .contBuscador .Desplegable i.fa-caret-down {
+    font-size: 14px;
+  }
+
+  .contBuscador .Buscador {
+    flex: 8;
+    height: 30px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+  }
+
+  .contBuscador .Boton button {
+    height: 30px;
+    background-color: #febd69;
+    border: none;
+    padding: 0 10px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .contIdioma a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .contIdioma a span {
+    margin-right: 5px;
+  }
+
+  .contSesion a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contSesion a span {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  .contSesion a p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .contPedidos a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contPedidos a span {
+    display: block;
+    font-size: 14px;
+  }
+
+  .contPedidos a p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .contCesta a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .contCesta a span {
+    margin-left: 5px;
+  }
+
+  .contGris {
+    background-color: #f7f7f7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menuInf ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  .menuInf ul li {
+    margin-right: 15px;
+  }
+
+  .menuInf ul li:last-child {
+    margin-right: 0;
+  }
+
+  .menuInf ul li a {
+    color: #111;
+    text-decoration: none;
+  }
+
+  .menuInf ul li i {
+    margin-right: 5px;
+  }
+
+  .logoplay {
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .prime {
+    color: #00a8e1;
+  }
+
+  .diseñoraro {
+    height: 30px;
+    margin-left: 10px;
+  }

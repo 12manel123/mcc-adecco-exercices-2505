@@ -4,124 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tu compañía aérea - Sitio web</title>
-  <link rel="stylesheet" href="estilos.css"> <!-- Enlaza tu archivo CSS personalizado -->
-  <style>
-/* Estilo para el contenedor negro */
-.contNegro {
-  background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
-}
-
-/* Estilo para el contenedor naranja */
-.contNaranja {
-  background-color: orange;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-/* Estilo para la imagen del logo */
-.hijo1 img {
-  height: 50px;
-}
-
-/* Estilo para la navegación */
-nav {
-  display: flex;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Estilo para el botón de idioma */
-nav ul li a div {
-  display: flex;
-  align-items: center;
-}
-
-nav ul li a div img {
-  margin-left: 5px;
-}
-
-/* Estilo para el contenedor azul */
-.contAzul {
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-}
-
-/* Estilo para la caja rosa */
-.cajaRosa {
-  background-color: pink;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-}
-
-/* Estilo para las cajas rojas */
-.cajaRoja1, .cajaRoja2, .cajaRoja3 {
-  background-color: red;
-  width: 50px;
-  height: 50px;
-}
-
-/* Estilo para el botón */
-.cajaBoton {
-  background-color: white;
-  width: 100px;
-  height: 50px;
-  margin-left: 20px;
-}
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://kit.fontawesome.com/0fee20f827.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="contNegro">
-    <div class="contNaranja">
-        <div class="hijo1"><img src="img/logo.jpg"></div>
-        <div class="hijo2">
-            <nav>
-                <ul>
-                    <li><a href="planear.html">Planear</a></li>
-                    <li><a href="reservas.html">Mis reservas</a></li>
-                    <li><a href="registrarse.html">Registrarse</a></li>
-                    <li><a href="iniciar.html">Iniciar sesión</a></li>
-                    <li><a href="ayuda.html">Ayuda</a></li>
-                    <li><a href="langauge">
+  <body>
+    <div class="contNegro">
+        <div class="contNaranja">
+            <div class="logotipo">
+                <img src="https://1000marcas.net/wp-content/uploads/2020/01/Ryanair-emblema.jpg" alt="Logotipo ryanair" width=" 120px" height="auto">
+            </div>
+            <div class="menusup">
+                <nav>
+                    <ul type="none">
+                        <li><a href="planear.html">Planear<i class="fa-solid fa-chevron-down"></i></a></li>
+                        <li><a href="#">Mis reservas</a></li>
+                        <li><a href="#">Registrarse</a></li>
+                        <li><a href="#">Iniciar sesión</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24px" height="auto"><path fill="#ffda44" d="M0 85.331h512v341.337H0z" class="colorffda44 svgShape"></path><path fill="#d80027" d="M0 85.331h512v113.775H0zM0 312.882h512v113.775H0z" class="colord80027 svgShape"></path></svg><i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="contAzul">
+            <div class="contRosa">
+                <div>
+                    <nav class="menuinf">
+                        <ul type="none">
+                            <li><i class="fa-solid fa-plane"></i><a href="#">VUELOS</a></li>
+                            <li><i class="fa-solid fa-car"></i><a href="#">ALQUILER DE COCHES</a></li>
+                            <li><i class="fa-solid fa-hotel"></i><a href="#">HOTELES</a></li>
+                            <li><i class="fa-solid "></i><a href="#">EVENTOS Y ACTIVIDADES</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="caja2">
+                    <div class="menuter">
                         <div>
-                            <!--<img src="img/spain.png" alt="idioma" width="24px" height="24px">-->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24px" height="auto"><path fill="#ffda44" d="M0 85.331h512v341.337H0z" class="colorffda44 svgShape"></path><path fill="#d80027" d="M0 85.331h512v113.775H0zM0 312.882h512v113.775H0z" class="colord80027 svgShape"></path></svg>
+                            <input type="radio" name="tipodeviaje" id="soloida">
+                            <label for="soloida">Ida y vuelta</label>
                         </div>
-                        </div></a>
-                    </li>
-                </ul>
-            </nav>
+                        <div>
+                            <input type="radio" name="tipodeviaje" id="soloida">
+                            <label for="soloida">Solo ida</label>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-shield-dog"></i>
+                            <label for="">Aplicar código promocional</label>
+                        <i class="fa-solid fa-info"></i><span>Verificado por Ryanair</span>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i><span>Verificado por Ryanair</span>
+                        <i></i>
+                    </div>
+                </div>    
+                <div class="caja3">
+                    <div>
+                        <span>De</span>
+                        <p>Cataluña</p>
+                    </div>
+                    <div>
+                        <span>A</span>
+                        <p>Destino</p>
+                    </div>
+                    <div class="botonabs"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                </div>
+            </div>
+            <div class="boton"><button>Buscar</button></div>
         </div>
     </div>
-    <div class="contAzul">
-        <div class="cajaRosa">
-            <div class="cajaRoja1"></div>
-            <div class="cajaRoja2"></div>
-            <div class="cajaRoja3"></div>
-        </div>
-        <div class="cajaBoton"></div>
-    </div>
-</div>
+    
 
 
 </body>
