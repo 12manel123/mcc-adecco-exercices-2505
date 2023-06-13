@@ -1,0 +1,87 @@
+/* MEDIA QUERIES HEADER AMAZON */
+
+/* BREAKPOINT XS a MD */
+
+@media (min-width: 0px) and (max-width: 768px){
+    
+    .amarillooscuro, .containerfx-end, .rojo{
+        display: none;
+    }
+    .spacioeven{
+        display: block;
+        margin-top: 1rem;
+    }
+    .contAmac{
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem 1rem;
+        background-color: #232f3e;
+    }
+    .azulclaro{
+        width: 100%;
+        background-color: white;
+        border-radius: 7px;
+    }
+    .achijo1{
+        display: none;
+    }
+    .achijo2{
+        border-radius: 7px 0 0 7px;
+        width: 90%;
+    }
+    .achijo3{
+        border-radius: 7px;
+    }
+}
+/* BREAKPOINT MD a XL */
+@media (min-width: 769px) and (max-width: 991px){
+    .containerfx-endMDXL{
+        display: none;
+    }
+    .amarillooscuroMDXL{
+        display: none;
+    }
+    .azulclaro{
+        width: 60% !important;
+    }
+}
+
+/* BREAKPOINT MD a XL */
+
+@media (min-width: 769px) and (max-width: 1199px){
+    .containerTop i, .contTopRight{
+        display: none;
+    }
+    .containerTop{
+        width: fit-content;
+    }
+    .rojoMDXL{
+        display: none;
+    }
+    .azulclaro{
+        width: 35%;
+        background-color: white;
+        border-radius: 7px;
+    }
+    .achijo1{
+        display: none;
+    }
+    .achijo2{
+        border-radius: 7px 0 0 7px;
+        width: 90%;
+    }
+    .achijo3{
+        border-radius: 7px;
+    }
+}
+
+/* BREAKPOINT XL en adelante */
+
+@media (min-width: 1200px){
+.containerTop i, .contTopRight{
+    display: none;
+}
+.containerTop{
+    width: fit-content;
+}
+}

@@ -1,0 +1,31 @@
+header {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #menu-toggle:checked + label + ul {
+    display: block;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* Estilos para dispositivos con un ancho de pantalla mayor o igual a 768px */
+    header {
+      /* Agrega aquí tus estilos para la versión de escritorio del header */
+    }
+  }

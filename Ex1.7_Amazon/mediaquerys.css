@@ -1,0 +1,12 @@
+@media /* regla condicional
+resolucion pantalla
+orientación (landscape -->horizontal; portrait --> vertical)
+medio (predeterminado: screen; Además: print; spech)
+*/(min-width:0px) and
+/*operadores (and: 2 condiciones tienen que ser verdad; or: una de ellas tiene que ser verdaderas; not: que no se cumple; only: solamente cuando sea verdad)*/ 
+(max-width:768px){
+    /*estilos (declaraciones anidadas)*/
+    h1{
+        color:red;
+    }
+}

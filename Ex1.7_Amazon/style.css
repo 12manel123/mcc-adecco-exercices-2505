@@ -1,3 +1,21 @@
+ /*Añador tipografia de amazon, auque la tengo en boostrap en el html*/
+/*
+@font-face {
+  font-family: 'primatyT';
+  src: url(../fonts/Amazon\ Emver\ Cd\ RC\ Thin.ttf);
+}
+@font-face {
+  font-family: 'primatyM';
+  src: url(../fonts/Amazon\ Emver\ Display\ Medium.ttf);
+}
+
+p{
+  font-family: 'primaryM'!important;
+}
+span{
+  font-family: 'primaryT'!important;
+}
+*/
 .contTodo {
     background-color: #f7f7f7;
   }
