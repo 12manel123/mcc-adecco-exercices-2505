@@ -1,0 +1,4 @@
+.menuSup ul li {
+display: inline-block; margin: center;
+padding-top: 5px;
+}

@@ -1,0 +1,26 @@
+1
+<!DOCTYPE html>
+2
+<html lang="es">
+3
+4
+<head>
+5
+<meta charset="UTF-8">
+6
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+7
+8
+<title>Título del documento</title>
+9
+10
+<link href="https://fonts.googleapis.com/css?family=Roboto:wght@100&display=swap" rel="stylesheet">
+11
+12
+<link rel="viewport" type="text/css" href="css/normalize.css" />
+13
+<link rel="viewport" type="text/css" href="css/style.css" />
+14
+15
+</head>
+16

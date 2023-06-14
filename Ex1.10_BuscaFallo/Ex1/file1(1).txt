@@ -1,0 +1,17 @@
+<body>
+<main style="background-color: rgba(255, 255, 255, 0.2);"> <nav type="menu" class="menuSup">
+<ul>
+<li>
+<a href="#">Home</a>
+</li>
+<li>
+<a href="#">About us</a>
+</li>
+<li>
+<a href="#">Reserva</a>
+</li>
+<li>
+</li>
+</ul>
+</nav>
+<a href="#">Contact</a>

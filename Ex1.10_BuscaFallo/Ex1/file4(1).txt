@@ -1,0 +1,14 @@
+head {
+font-family: "Roboto";
+font-weight: 300;
+line-height: 1.6;
+}
+body {
+background-color: teal; padding: 5%;
+}
+. izquierda {
+float: left;
+}
+}
+.container {
+width: 100%;

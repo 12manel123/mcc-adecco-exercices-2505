@@ -1,0 +1,13 @@
+.menuSup {
+font-family: Roboto, cursive;
+font-size: 25px;
+font-weight: 900;
+}
+.menuSup ul {
+}
+list-style-type: none;
+.menuSup ul li {
+}
+display: inline-block;
+margin: auto 30px auto 30px;
+padding-top: 5px;
