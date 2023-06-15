@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <script>
+        //MÉTODO ALERT
+        //alert("Mensaje de alerta")
+
+        
+
+
+        //Las variables se crean con la palabra reservada "var"
+        var COCHES
+        var coches;
+        var Coches
+        var $miVariable;
+        var _$letra1;
+
+        //Las variables declaradas con la palabra reservada "var y "let" pueden reasignar sus valores
+        var $$$miVariable
+        let variableLet
+     
+        _$letra1 = 7
+        _$letra1 = 9
+       console.log(_$letra1)
+
+        function miPrimerafuncion(){
+            //La zona muerta es este espacio entre el comienzo de un bloque de código y la asignación de sus variables let o const
+            let uno
+            let dos
+            let tres
+            console.log(variableLet2)
+            let variableLet2
+            //Aquí finaliza la Zona Muerta Temporal
+            variableLet2 = 5
+            console.log(variableLet2)
+            uno = 1
+            dos = 2
+            tres = 3
+        }
+
+        //Las variables declaradas con la palabra reservada "const" no pueden reasignar sus valores
+
+        //VARIABLES NUMÉRICAS
+        
+        coches = 3
+        Coches = 3.35 //variable de tipo decimal (float). Los números decimales utilizan un "." para separar la parte entera y la parte decimal
+
+        //VARIABLES STRING (Cadena de texto)
+
+        COCHES = "\'cadena \n\tde texto\'"
+        $miVariable = 'segunda cadena de texto';
+
+            /* ENTIDADES JS
+            Nueva línea: \n
+            Tabulación: \t
+            Comilla simple: \'
+            Comilla doble: \"
+            Barra invertida: \\
+            
+            */
+
+       //VARIABLES BOOLEANAS
+       /* Se denominan variables lógicas. Solo pueden tener dos posibles valores: TRUE y FALSE*/
+
+       var booleanaTrue
+       var booleanaFalse
+
+       booleanaTrue = true
+       booleanaFalse = false
+
+        
+        // identificador: nombre que le vamos a asignar a una variable.
+            // Normas: puede contener números, letras, caracteres especiales, incluyendo el símbolo $. 
+            //Nunca puede comenzar por un número o por un caracter especial, a excepción de _ o $
+            //Nunca pueden contener espacios, por eso es recomendable utilizar camelCase
+
+
+        //console.log(COCHES)
+        
+       
+       
+        //JS es Keysensitive
+        //Cuando terminamos una sentencia podemos incluir ";" pero no es obligatorio
+        function  name(params  ) {
+            
+
+
+        }
+        //Comentarios de una línea
+        /* Comentarios de más de una línea */
+    </script>
+</head>
+<body>
+
+    <script>
+        //MÉTODO PROMPT
+        var nombreUsuario = prompt("Dime tu nombre");
+        document.write("HOLA " + nombreUsuario)
+
+    </script>
+  
+    <p>Lorem ipsum dolor   <span id="Solucion"></span>    consectetur adipisicing elit. A voluptatum in libero omnis! Sapiente explicabo vero alias? Illum, impedit. Quam fugiat explicabo eum     <span id="Solucion2"></span>     mollitia  <span id="Solucion3"></span>   magni tempore, repellat iusto eveniet itaque!</p>
+    
+
+    <button onclick="mostrarSolucion()">Solución</button>
+
+    <h1 id="encabezado" onclick="document.getElementById('encabezado').innerHTML = 'he cambiado'";>soy contacto</h1>
+  <script>
+        function mostrarSolucion(){
+            document.getElementById("Solucion").innerHTML = "SOLUCIÓN"; 
+            document.getElementById('Solucion2').innerHTML = "SOLUCIÓN 2"; document.getElementById('Solucion3').innerHTML = "SOLUCIÓN 3"
+            document.getElementById('Solucion2').style = "color:red";
+            document.getElementById('Solucion').style = "color:blue";
+            document.getElementById('Solucion3').style = "color:green";
+        }
+        //Mi código JS
+        //document.getElementById('encabezado').
+        //para que afecte a todo el documento se debe añadir justo antes del cierre de body
+        //console.log("texto"+ " "  + 7)
+
+        //MÉTODOS PARA MODIFICAR EL DOM
+
+        document.write("Este es mi primer document.write")
+        
+    </script>
+</body>
+</html>
