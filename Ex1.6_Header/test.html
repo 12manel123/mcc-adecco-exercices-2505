@@ -41,6 +41,7 @@
                         </a></li>
                         <li><button onclick="agrandar()">Zoom</button></li>
                         <li><button onclick="reducir()">Reducir</button></li>
+                        <li><button onclick="oscuro()">Darkmode</button></li>
                     </ul>
                 </nav>
             </div>
@@ -112,6 +113,9 @@
         document.getElementById("estilo").href='estilos.css';
         document.getElementById('btnReducir').style="display:none";
         document.getElementById('btnAgrandar').style="display:block";
+      }
+      function oscuro(){
+        document.getElementById("estilo").href='dark.css';
       }
     </script>
 
