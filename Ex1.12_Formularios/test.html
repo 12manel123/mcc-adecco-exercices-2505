@@ -35,10 +35,12 @@
 
     input[type="text"],
     input[type="email"],
+    input[type="password"],
     input[type="date"],
     input[type="file"],
     input[type="color"],
-    input[type="range"] {
+    input[type="range"],
+    input[type="url"] {
       width: 100%;
       padding: 10px;
       border: 1px solid #ccc;
@@ -49,18 +51,18 @@
     }
 
     input[type="submit"] {
-      background-color: #4caf50;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      text-align: center;
-    }
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
 
     input[type="submit"]:hover {
       background-color: #45a049;
@@ -78,11 +80,14 @@
     <h1>Formulario ManelCC</h1>
     <form id="myForm" onsubmit="validateForm(event)">
       <label for="name">Nombre:</label>
-      <input type="text" id="name" required>
+      <input type="text" id="name" pattern="[A-Za-z]+" title="Solo se permiten letras. Ejemplo: John" required>
       <br>
       <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" required>
+      <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Por favor, ingresa un correo electrónico válido." required>
       <span class="error-message" id="emailError"></span>
+      <br>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres." required>
       <br>
       <label for="birthdate">Fecha de nacimiento:</label>
       <input type="date" id="birthdate" required>
@@ -90,26 +95,25 @@
       <label for="avatar">Avatar:</label>
       <input type="file" id="avatar" accept="image/*" required>
       <br>
+      <label for="website">Sitio web:</label>
+      <input type="url" id="website" pattern="https?://.+">
+      <span class="error-message" id="websiteError"></span>
+      <br>
       <label for="color">Color favorito:</label>
       <input type="color" id="color" required>
       <br>
       <label for="range">Valor:</label>
       <input type="range" id="range" min="0" max="100" required>
       <br>
-      <label for="website">Sitio web:</label>
-      <input type="url" id="website" required>
-      <span class="error-message" id="websiteError"></span>
-      <br><br>
-      <label for="gender">Género:</label>
-      <label for="male"><input type="radio" id="male" name="gender" value="male" required>Masculino
+      <label>Género:</label>
+      <label for="male">Masculino<input type="radio" id="male" name="gender" value="male" required>
       </label>
-      <label for="female"><input type="radio" id="female" name="gender" value="female" required>Femenino
+      <label for="female">Femenino<input type="radio" id="female" name="gender" value="female" required>
       </label>
       <br>
-      <label for="terms">Acepto los términos y condiciones:      <input type="checkbox" id="terms" required>
+      <label for="terms">Acepto los términos y condiciones:<input type="checkbox" id="terms" required>
       </label>
-
-      <br><br>
+      <br>
       <input type="submit" value="Enviar">
     </form>
   </div>
