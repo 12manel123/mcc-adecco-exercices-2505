@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario con Validación</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="file"],
+    input[type="color"],
+    input[type="range"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario ManelCC</h1>
+    <form id="myForm" onsubmit="validateForm(event)">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" required>
+      <br>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" required>
+      <span class="error-message" id="emailError"></span>
+      <br>
+      <label for="birthdate">Fecha de nacimiento:</label>
+      <input type="date" id="birthdate" required>
+      <br>
+      <label for="avatar">Avatar:</label>
+      <input type="file" id="avatar" accept="image/*" required>
+      <br>
+      <label for="color">Color favorito:</label>
+      <input type="color" id="color" required>
+      <br>
+      <label for="range">Valor:</label>
+      <input type="range" id="range" min="0" max="100" required>
+      <br>
+      <label for="website">Sitio web:</label>
+      <input type="url" id="website" required>
+      <span class="error-message" id="websiteError"></span>
+      <br><br>
+      <label for="gender">Género:</label>
+      <label for="male"><input type="radio" id="male" name="gender" value="male" required>Masculino
+      </label>
+      <label for="female"><input type="radio" id="female" name="gender" value="female" required>Femenino
+      </label>
+      <br>
+      <label for="terms">Acepto los términos y condiciones:      <input type="checkbox" id="terms" required>
+      </label>
+
+      <br><br>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+  <script>
+    var emailInput = document.getElementById('email');
+    var emailError = document.getElementById('emailError');
+    var websiteInput = document.getElementById('website');
+    var websiteError = document.getElementById('websiteError');
+
+    emailInput.addEventListener('input', function() {
+      if (emailInput.validity.valid) {
+        emailError.textContent = '';
+        emailError.className = 'error-message';
+      } else {
+        showEmailError();
+      }
+    });
+
+    websiteInput.addEventListener('input', function() {
+      if (websiteInput.validity.valid) {
+        websiteError.textContent = '';
+        websiteError.className = 'error-message';
+      } else {
+        showWebsiteError();
+      }
+    });
+
+    function showEmailError() {
+      if (emailInput.validity.valueMissing) {
+        emailError.textContent = 'Por favor, ingresa tu correo electrónico.';
+      } else if (emailInput.validity.typeMismatch) {
+        emailError.textContent = 'Por favor, ingresa un correo electrónico válido.';
+      }
+
+      emailError.className = 'error-message active';
+    }
+
+    function showWebsiteError() {
+      if (websiteInput.validity.valueMissing) {
+        websiteError.textContent = 'Por favor, ingresa la URL de tu sitio web.';
+      } else if (websiteInput.validity.typeMismatch) {
+        websiteError.textContent = 'Por favor, ingresa una URL válida.';
+      }
+
+      websiteError.className = 'error-message active';
+    }
+
+    function validateForm(event) {
+      event.preventDefault();
+
+      if (!emailInput.validity.valid) {
+        showEmailError();
+      } else if (!websiteInput.validity.valid) {
+        showWebsiteError();
+      } else {
+        emailError.textContent = '';
+        emailError.className = 'error-message';
+        websiteError.textContent = '';
+        websiteError.className = 'error-message';
+        document.getElementById('myForm').submit();
+      }
+    }
+  </script>
+</body>
+</html>

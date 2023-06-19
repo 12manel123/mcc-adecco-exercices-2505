@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<form action="mailto:alesrin@icloud.com" method="post">
+    <label for="">Nombre</label>
+    <input type="text" id="nombre1" name="nombre">
+    <input type="text" maxlength="10" minlength="2" placeholder="Nacionalidad" name="nacionalidad" required>
+    <imput type="text" value="Calle" name="direccionCalle">
+        <label for="nHijos">¿Cu&aacute;ntos Hijos Tienes?</label>
+        <input type="number" min="1" max="6" name="Numero de Hijos"id="nHijos">
+        <div><label for="url">url</label><input  name="web" id="url" type="url">
+        <label for="">Email</label><input name="email" type="email">
+        <label for="">Fecha</label><input name="fecha" type="datetime-local">
+        <label for="">Archivo</label><input name="archivo" type="file">
+        <label for="">Color</label><input name="color" type="color">
+        <label for="">Rango</label><input name="range" type="rango" max="10" min="5" disabled> 
+        <div>
+            <h2>Metodo de Pago</h2>
+            <input type="radio" name="mPago" id="Coontrareembolso">
+            <label>Coontrareembolso</label>
+            <input type="radio" name="mPago" id="Transferencia">
+            <label>Transferencia</label>
+            <input type="radio" name="mPago" id="Bizum">
+            <label>Bizum</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Mañana" id="mañana">Mañana<label for="Mañana"></label>
+            <input type="checkbox" name="Mediodia" id="mediodia">Mediodia<label for="Mediodia"></label>
+            <input type="checkbox" name="Tarde" id="tarde">Tarde<label for="Tarde"></label>
+        </div>
+        <label for="psw">Contraseña</label>
+        <input type="password" name="password">
+        <label for="nombre1">Nombre</label>
+<input type="text" id="nombre1" name="nombre" pattern="[A-Za-z]{3}" title="El texto introducido debería tener entre 5 y 7 caracteres">
+<input type="text" maxlength="10" minlength="2" placeholder="Nacionalidad" name="nacionalidad" required>
+<input type="text" value="Calle" name="direcci&oacute;nCalle">
+<label for="cp">Código postal</label>
+<label for="CP">C&oacute;digo postal</label>
+<input type="text" pattern="[0-9]{5}" size="5" id="CP" name="CP" title="El c&oacute;digo postal debe tener 5 n&uacute;meros">
+        <input type="reset" value="RESET">
+        <input type="submit" value="ENVIAR"></div>
+        
+        <script>
+            var input = document.getElementById('url')
+            input.oninvalid = function(event){
+                event.target.setCustomValidity('Esta url no me vale')
+            }
+        </script>
+    
+</form>
+
+</body>
+</html> 
